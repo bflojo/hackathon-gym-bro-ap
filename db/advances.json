@@ -1,0 +1,26 @@
+[
+    {
+        "id": 0,
+        "firstName": "Hafþór",
+        "lastName": "Björnsson",
+        "gender": "Male",
+        "age": "29",
+        "zip": "92612",
+        "gym": "Golds Gym",
+        "daysAttending": "7",
+        "timeAttending": "evenings, mornings",
+        "exerciseType": "free weights"
+    },
+    {
+        "id": 1,
+        "firstName": "Usain ",
+        "lastName": "Bolt",
+        "gender": "Male",
+        "age": "30",
+        "zip": "98903",
+        "gym": "La Fitness",
+        "daysAttending": "6",
+        "timeAttending": "mornings, evenings",
+        "exerciseType": "cardio"
+    }
+]

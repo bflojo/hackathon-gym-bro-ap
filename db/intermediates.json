@@ -1,0 +1,38 @@
+[
+    {
+        "id": 0,
+        "firstName": "John",
+        "lastName": "Smith",
+        "gender": "Male",
+        "age": "23",
+        "zip": "90210",
+        "gym": "24hr Fitness",
+        "daysAttending": "4",
+        "timeAttending": "evenings",
+        "exerciseType": "free weights"
+    },
+    {
+        "id": 1,
+        "firstName": "Jane",
+        "lastName": "Smith",
+        "gender": "female",
+        "age": "25",
+        "zip": "98903",
+        "gym": "Golds Gym",
+        "daysAttending": "4",
+        "timeAttending": "evenings",
+        "exerciseType": "crossfit"
+    },
+    {
+        "id": 2,
+        "firstName": "Jane",
+        "lastName": "Doe",
+        "gender": "Female",
+        "age": "45",
+        "zip": "92780",
+        "gym": "Baleys Total Fitness",
+        "daysAttending": "4",
+        "timeAttending": "mornings",
+        "exerciseType": "cardio"
+    }
+]

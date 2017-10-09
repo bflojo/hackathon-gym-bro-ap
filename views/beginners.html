@@ -1,0 +1,39 @@
+<div class="container">
+
+  <div class="form-group">
+    <h2>Search For Beginner Members</h2>
+    <input type="text" class="form-control" placeholder="Search..." ng-model="beginnerSearch">
+  </div>
+
+  <div class="col-md-2">
+    <button class="btn btn-info" ui-sref="beginnersNew">Sign up for Beginner</button>
+  </div>
+  <br>
+  
+  
+  
+  
+  <br>
+
+  <div class="row userSection">
+    <div ui-sref="beginnerShow({ id: {{ beginner.id }}})" class="userContainer col-md-3" ng-repeat="beginner in beginner | filter: beginnerSearch">
+      <div class="userHeader">
+        <h1 class="userHeading">{{ beginner.firstName }} {{ beginner.lastName }}</h1>
+      </div>
+      <div class="userBody">        
+      
+        <p><strong>Gender:</strong> {{ beginner. gender}}</p>
+        <p><strong>Age:</strong> {{ beginner. age}}</p>
+        <p><strong>Zip:</strong> {{ beginner. zip}}</p>
+        <p><strong>Gym:</strong> {{ beginner.gym }}</p>
+        <p><strong>Days Attending:</strong> {{ beginner. daysAttending}}</p>
+        <p><strong>Time Attending:</strong> {{ beginner. timeAttending}}</p>
+        <p><strong>Exercise Type:</strong> {{ beginner. exerciseType}}</p>
+        <p><strong>Goal:</strong> {{ beginner.goals }}</p>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- Container End -->

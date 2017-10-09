@@ -1,0 +1,43 @@
+<div class="container">
+
+  <div class="form-group">
+    <h2>Search For Intermediate Member</h2>
+    <input type="text" class="form-control" placeholder="Search..." ng-model="intermediateSearch">
+  </div>
+<div>
+  <div class="col-md-2">
+    <button class="btn btn-info" ui-sref="intermediatesNew">Sign up for Intermediate</button>
+  </div>
+</div>
+<br>
+
+
+
+
+<br>
+  <div>
+
+  </div>
+
+  <div class="row userSection">
+    <div ui-sref="intermediateShow({ id: {{ intermediate.id }}})" class="userContainer col-md-3" ng-repeat="intermediate in intermediate | filter: intermediateSearch">
+      <div class="userHeader">
+        <h1 class="userHeading">{{ intermediate.firstName }} {{ intermediate.lastName }}</h1>
+      </div>
+      <div class="userBody">         
+          
+          <p><strong>Gender:</strong> {{ intermediate.gender}}</p>
+          <p><strong>Age:</strong> {{ intermediate.age}}</p>
+          <p><strong>Zip:</strong> {{ intermediate.zip}}</p>
+          <p><strong>Gym:</strong> {{ intermediate.gym }}</p>
+          <p><strong>Days Attending:</strong> {{ intermediate.daysAttending}}</p>
+          <p><strong>Time Attending:</strong> {{ intermediate.timeAttending}}</p>
+          <p><strong>Exercise Type:</strong> {{ intermediate.exerciseType}}</p>
+          <p><strong>Goal:</strong> {{ intermediate.goals }}</p>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- Container End -->

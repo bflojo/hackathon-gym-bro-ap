@@ -1,0 +1,38 @@
+<div class="container">
+
+  <div class="form-group">
+    <h2>Search For Advance Members</h2>
+    <input type="text" class="form-control" placeholder="Search..." ng-model="advanceSearch">
+  </div>
+
+  <div class="col-md-2">
+    <button class="btn btn-info" ui-sref="advancesNew">Sign up for Advanced</button>
+  </div>
+  <br>
+  
+  
+  
+  
+  <br>
+  <div class="row userSection">
+    <div ui-sref="advanceShow({ id: {{ advance.id }}})" class="userContainer col-md-3" ng-repeat="advance in advance | filter: advanceSearch">
+      <div class="userHeader">
+        <h1 class="userHeading">{{ advance.firstName }} {{ advance.lastName }}</h1>
+      </div>
+      <div class="userBody">          
+      
+          <p><strong>Gender:</strong> {{advance.gender}}</p>
+          <p><strong>Age:</strong> {{advance.age}}</p>
+          <p><strong>Zip:</strong> {{advance.zip}}</p>
+          <p><strong>Gym:</strong> {{advance.gym }}</p>
+          <p><strong>Days Attending:</strong> {{advance.daysAttending}}</p>
+          <p><strong>Time Attending:</strong> {{advance.timeAttending}}</p>
+          <p><strong>Exercise Type:</strong> {{advance.exerciseType}}</p>
+          <p><strong>Goal:</strong> {{advance.goals }}</p>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- Container End -->

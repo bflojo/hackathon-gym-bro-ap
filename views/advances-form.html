@@ -1,0 +1,49 @@
+<div class="container">
+
+  <h1 class="hero">Create Advance!</h1>
+
+  <div class="row">
+    <h3 class="sectionHeader">Advance Information</h3>
+
+    <div class="form-group col-md-6">
+      <label>First Name</label>
+      <input type="text" class="form-control" placeholder="First Name" ng-model="advance.firstName">
+    </div>
+
+    <div class="form-group col-md-6">
+      <label>Last Name</label>
+      <input type="text" class="form-control" placeholder="Last Name (optional)" ng-model="advance.lastName">
+    </div>
+
+    <div class="form-group col-md-6">
+      <label>Gender</label>
+      <input type="text" class="form-control" placeholder="Gender" ng-model="advance.gender">
+    </div>
+
+    <div class="form-group col-md-6">
+      <label>Age</label>
+      <input type="text" class="form-control" placeholder="Age" ng-model="advance.age">
+    </div>
+
+    <div class="form-group col-md-6">
+      <label>Gym</label>
+      <input type="text" class="form-control" placeholder="24Hr Fitness, Golds Gym. . . " ng-model="advance.gym">
+    </div>
+
+    <div class="form-group col-md-6">
+      <label>Days Attending</label>
+      <input type="text" class="form-control" placeholder="Monday, Tuesday, Wednesday. . ." ng-model="advance.daysAttending">
+    </div>
+
+    <div class="form-group col-md-6">
+      <label>Time Attending</label>
+      <input type="text" class="form-control" placeholder="Morning, Afternoon, Evening. . ." ng-model="advance.timeAttending">
+    </div>
+
+    <div class="form-group col-md-6">
+      <label>Exercise Type</label>
+      <input type="text" class="form-control" placeholder="Cardio, Free weights, Crossfit. . . " ng-model="advance.exerciseType">
+    </div>
+    <button class="btn pull-right btn-primary" ng-show="submitButton" ng-click="addAdvance()">Submit</button>
+    <button class="btn pull-right btn-success" ng-show="saveButton" ng-click="saveAdvance()">Save</button>
+  </div>

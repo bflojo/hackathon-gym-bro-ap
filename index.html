@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="gymBroApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gym Bro</title>
+
+    <!-- Google Font - Open Sans -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+    <!-- Bootstrap CDN 3.3.7 -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <!-- Angular CDN 1.5.7 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.min.js"></script>
+
+    <!-- Angular UI Router CDN 0.4.2 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+
+
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="customNav">
+            <ul class="customNavItems">
+                <!-- <li><a ui-sref="home">Home</a></li> -->
+                <li><a ui-sref="beginners">Beginner</a></li>
+                <li><a ui-sref="intermediates">Intermediate</a></li>
+                <li><a ui-sref="advances">Advance</a></li>
+            </ul>
+        </div>
+
+
+        <div ui-view></div>
+        <!-- module -->
+        <script type="text/javascript" src="./app.js"></script>
+        <!-- Services -->
+        <!-- <script type="text/javascript" src="./services/homeService.js"></script> -->
+        <!-- <script type="text/javascript" src="./services/userService.js"></script> -->
+        <script type="text/javascript" src="./services/beginnerService.js"></script>
+        <script type="text/javascript" src="./services/intermediateService.js"></script>
+        <script type="text/javascript" src="./services/advanceService.js"></script>
+        <!-- controllers -->
+        <script type="text/javascript" src="./controllers/indexController.js"></script>
+        <!-- <script type="text/javascript" src="./controllers/userController.js"></script> -->
+        <script type="text/javascript" src="./controllers/beginnerController.js"></script>
+        <script type="text/javascript" src="./controllers/intermediateController.js"></script>
+        <script type="text/javascript" src="./controllers/advanceController.js"></script>
+    </div>
+
+
+</body>
+
+</html>
